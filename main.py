@@ -37,8 +37,8 @@ bot = Client(
 photo = "https://i.postimg.cc/7LkVbrjm/yt.jpg"
 cpphoto = "https://i.postimg.cc/x81h56j7/cpdrm.webp"
 appxzip = "https://i.postimg.cc/Y0tt8SX3/appzip.webp"
-my_name = "𝕰𝖓𝖌𝖎𝖓𝖊𝖊𝖗𝖘 𝕭𝖆𝖇𝖚"
-CHANNEL_ID = "-1002257755789"
+my_name = "Dinc"
+CHANNEL_ID = "-1002749189862"
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -163,7 +163,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Engineer","upload"]) )
+@bot.on_message(filters.command(["drm","txt"]) )
 async def txt_handler(bot: Client, m: Message):
     await m.delete()
     
@@ -442,8 +442,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name} {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cc = f'**Index: {str(count).zfill(3)}**\n\n**Title:** `{name1}\n[{res}p].mkv`\n\n**Batch:** `{b_name}`\n\n📥 **Downloaded By:** `{CR}`\n'
+                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
                 cyt = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
                 ccp = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
                 czip = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
